@@ -160,7 +160,7 @@ function style(feature) {
   try {
     if (mapDataDate) {
       feature.properties.infections.data.forEach(item => {
-        if (item.date == mapDataDate) infected = item.infectedNumber;
+        if (item.date.includes(mapDataDate)) infected = item.infectedNumber;
       });
     } else {
       infected =
@@ -288,7 +288,7 @@ document.addEventListener("slider-changed", function(e) {
       let item = geojson._layers[key];
       try {
         item.feature.properties.infections.data.forEach(y => {
-          if (y.date == e.detail) {
+          if (y.date.includes(e.detail)) {
             item.setStyle({
               weight: 2,
               opacity: 1,
