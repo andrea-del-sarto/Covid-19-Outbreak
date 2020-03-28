@@ -120,7 +120,7 @@ body {
 }
 
 #slider {
-  display: inline-block;
+  display: inline;
 }
 
 #play-button {
@@ -131,7 +131,7 @@ body {
   color: white;
   margin: 0;
   padding: 0 12px;
-  width: 100px;
+  width: 60px;
   cursor: pointer;
   height: 30px;
   z-index: 9999;
