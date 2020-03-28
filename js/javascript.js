@@ -65,13 +65,23 @@ statesData.features.forEach(function(state) {
   });
 });
 
-var map = L.map("map").setView([42.1, 11.66], 5);
+
+var map = L.map('map', {
+  maxBounds: [
+          //south west
+          [52.160, 41.835],
+          //north east
+          [30.637, -17.446]
+          ],
+}).setView([41.9, 11.66], 6);
+
+// L.marker([42.309, 12.194]) .addTo(map);
 
 L.tileLayer(
   "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
   {
     maxZoom: 9,
-    minZoom: 5,
+    minZoom: 4,
     attribution:
       '<a href="https://www.openstreetmap.org/">OpenStreetMap</a>' +
       '|<a href="https://www.mapbox.com/">Mapbox</a>',
