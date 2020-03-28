@@ -124,14 +124,14 @@ body {
 }
 
 #play-button {
-  background: #f08080;
+  background: #2772d6;
   padding-right: 26px;
   border-radius: 3px;
   border: none;
   color: white;
   margin: 0;
   padding: 0 12px;
-  width: 60px;
+  width: 100px;
   cursor: pointer;
   height: 30px;
   z-index: 9999;
