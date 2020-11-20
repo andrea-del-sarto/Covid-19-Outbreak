@@ -73,7 +73,7 @@ var map = L.map('map', {
           //north east
           [47, 19]
           ],
-}).setView([41.9, 11.66], 6);
+}).setView([41.9, 11.66], 5);
 
 // L.marker([42.309, 12.194]) .addTo(map);
 
