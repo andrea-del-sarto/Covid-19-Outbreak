@@ -147,7 +147,9 @@ info.addTo(map);
 // get color depending on population density value
 function getColor(v) {
   var d = +v;
-  return d > 10000
+  return d > 20000
+    ? "#000000"
+    :  d > 10000
     ? "#800026"
     : d > 5000
     ? "#BD0026"
@@ -280,7 +282,7 @@ function updateChart(labels, infections) {
         {
           label: "Number of Infected",
           backgroundColor: "transparent",
-          borderColor: "rgb(255, 99, 132)",
+          borderColor: "rgb(255, 0, 54)",
           data: infections
         }
       ]
