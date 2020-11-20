@@ -242,7 +242,7 @@ geojson = L.geoJson(statesData, {
   onEachFeature: onEachFeature
 }).addTo(map);
 
-var legend = L.control({ position: "bottomright" });
+var legend = L.control({ position: "topleft" });
 
 legend.onAdd = function(map) {
   var div = L.DomUtil.create("div", "info legend"),
