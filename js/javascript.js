@@ -251,7 +251,7 @@ legend.onAdd = function(map) {
     from,
     to;
 
-  for (var i = 0; i < grades.length; i++) {
+ for (var i = 0; i < grades.length; i++) {
     from = grades[i];
     to = grades[i + 1];
 
@@ -321,7 +321,7 @@ document.addEventListener("slider-changed", function(e) {
 
 // ****************************** slider ************************
 
-var formatDateIntoYear = d3.timeFormat("%d");
+var formatDateIntoYear = d3.timeFormat("%b");
 var formatDate = d3.timeFormat("%d %b");
 
 var startDate = minDate,
